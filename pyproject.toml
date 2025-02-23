@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "proxy-mod"
+version = "0.1.0"
+description = "👁️ Un proxy que tiene la capacidad de poder ser controlado y realizar interceptaciones de manera fácil y completamente personalizable."
+authors = ["techatlasdev <srgoqui@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dotenv-python = "^0.0.1"
+
+[tool.poetry.scripts]
+main = "proxy_mod:main"
+client = "proxy_mod.client:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
